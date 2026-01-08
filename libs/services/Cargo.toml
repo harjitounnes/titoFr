@@ -1,0 +1,14 @@
+[package]
+name = "services"
+edition = "2021"
+
+[features]
+# wifi = [] 
+display = []
+
+[dependencies]
+drivers = { path = "../drivers"}
+embedded-hal = "1.0"
+heapless = "0.8"
+anyhow = "1"
+log = "0.4"

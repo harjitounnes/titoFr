@@ -1,0 +1,11 @@
+[package]
+name = "cores"
+edition = "2021"
+
+[dependencies]
+services = { path = "../services"}
+drivers = { path = "../drivers"}
+heapless = "0.8"
+anyhow = "1.0"
+[features]
+default = []

@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "firmware/app",
+    "libs/cores",
+    "libs/drivers",
+    # "libs/services",
+]
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true    # Symbols are nice, and they don't increase the size on Flash
+opt-level = "z"
